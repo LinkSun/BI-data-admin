@@ -1,0 +1,381 @@
+//utf-8
+.containter {
+    height: 100%;
+    position: relative;
+    //padding-top: 53px;
+    overflow: hidden;
+
+    &.containter-have-title {
+        padding-top: 73px;
+    }
+    .page-header {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 0 3px 1px #eee;
+    }
+    .content{
+        height: 100%;
+        padding:10px;
+        overflow: auto;
+        position: relative;
+    }
+    .no-roll{
+        overflow: hidden;
+    }
+
+    .content-search{
+        padding:20px;
+        margin-bottom:10px;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    .content-details {
+        padding:20px;
+        padding-bottom: 0;
+        background: #fff;
+    }
+  }
+// flex
+.flex {
+  display: flex;
+}
+.j-c {
+  justify-content: center;
+}
+.nowrap{
+  white-space: nowrap;
+}
+.j-e {
+  justify-content:flex-end;
+}
+.j-s {
+  justify-content:space-around;
+}
+.j-ey {
+  justify-content:space-evenly;
+}
+.j-b {
+  justify-content:space-between;
+}
+.a-c {
+  align-items: center;
+}
+.a-e {
+  align-items: flex-end;
+}
+.d-c {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap:wrap;
+}
+.nwrap {
+  flex-wrap:nowrap;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.hand {
+cursor:pointer
+}
+.blue {
+color: #1890FF;
+}
+.opacity-4{
+  opacity: 0.4;
+}
+.overflow-two {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+// 兼容全局苹果电脑自动隐藏滚动条问题
+::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 1em;
+  background-color: rgba(50,50,50,.3);
+}
+// 加价购图标样式
+.addPriceShopp{
+  width: 36px;
+  height: 14px;
+  background: #E78613;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 14px;
+  padding: 0 3px;
+}
+// ::-webkit-scrollbar-track{
+  // border-radius: 1em;
+  // background-color: rgba(245, 10, 10, 1);
+// }
+.multiple-wrapper{
+  position: relative;
+  width: 100%;
+}
+.multiple-count-wrapper{
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  height: 30px;
+  padding: 0 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.multiple-count{
+    height: 24px;
+    background: #FFF;
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #bfa;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+}
+// 2022-05-05
+.ant-select {
+  width:100%;
+  .ant-select-selection{
+  border:1px solid rgba(0,249,255,1);
+  background: transparent;
+  color:#19ECFF;
+    }
+  .ant-select-arrow-icon{
+    color: #05BCDC;
+  }
+}
+.select-list{
+  background: rgba(12,13,40,0.87);
+  border:1px solid rgba(0,249,255,1);
+  .ant-select-dropdown-menu-item{
+    color: rgba(25,236,255,.8);
+    &.ant-select-dropdown-menu-item-selected{
+      background: rgba(12,13,40,0.87);
+    }
+    &:hover{
+      background: rgba(0,0,0,.5);
+    }
+  }
+}
+/* echarts 菜单 */
+.legend {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  width: 95px;
+}
+
+.lump {
+  width: 19px;
+  height: 3px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* 计划 */
+.plan {
+  border-bottom: 2px solid #66ffff;
+}
+
+/* 实际 */
+.actual {
+  border-bottom: 2px solid #6c02cf;
+}
+
+/* 日均线 */
+.average {
+  border-bottom: 2px dashed #ff8b2f;
+}
+
+/*element 样式 */
+
+ 
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #070640 !important;
+}
+
+.el-table__body-wrapper{
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #070640;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #8383a5;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #8383a5;
+  }
+  .el-table__empty-block{
+    background:rgb(7 6 64);
+  }
+  .el-table__empty-text{
+    color:#fff;
+  }
+
+}
+::v-deep .el-table{
+  color:red;
+  &::-webkit-scrollbar {
+  background:rgb(4, 19, 112)
+}
+}
+/*卡片加载*/
+.card-box{
+  position: relative;
+}
+.cardLoad{
+  position: absolute;
+    left:calc(50% - 20px);
+    top:calc(50% - 20px);
+}
+
+.flex-header{
+  position: relative;
+  z-index: 11;
+}
+.noData{
+  position: absolute;
+  left:calc(50% - 20px);
+  top:calc(50%);
+  color:#fff;
+}
+.card-font{
+  cursor: pointer;
+}
+::v-deep .el-table{
+  // background:rgb(7 6 64)
+}
+.execl{
+  padding:10px;
+}
+// sab卡片样式
+.percent{
+  margin-top:5px;
+}
+.percent>div{
+  display:flex;
+}
+
+/* 修改select样式 */
+
+.middle-box{
+  position: relative;
+}
+
+.select-box{
+  position:absolute;
+  right: 20px;
+  top:10px;
+}
+
+.el-select{
+  background: transparent;
+  color:#19ECFF;
+}
+.el-select:hover .el-input__inner{
+border:1px solid rgba(0,249,255,1);
+}    
+.el-select .el-input__inner{
+border:1px solid rgba(0,249,255,1);
+  background: transparent;
+}
+.select-box .el-select .el-input__inner,.select-box .el-select .el-input__inner::-webkit-input-placeholder{
+ color:#19ECFF;
+}
+.el-select .el-select-dropdown__item.selected{
+background: rgba(12,13,40,0.87);
+}
+.el-select .el-input .el-select__caret{
+  color:#05BCDC;
+}
+.el-select .el-select-dropdown{
+background: rgba(12,13,40,0.87);
+border:1px solid rgba(0,249,255,1)
+}      
+.el-select .el-select-dropdown__item{
+    color:rgba(25,236,255,.8);
+}
+.el-select .el-select-dropdown__item.selected{
+  color:rgba(25,236,255,.8);
+}
+.el-select .el-select-dropdown__item:hover{
+  background:rgba(0,0,0,.5);
+}
+.el-popper .el-popper__arrow{
+display:none;
+}
+.el-select .el-popper[x-placement^=bottom] .popper__arrow::after{
+  
+  border-bottom-color: #0b0d2a;
+}
+.el-select .el-select-dropdown__item.hover,.el-select .el-select-dropdown__item:hover{
+  background:rgba(0,0,0,.2);
+}
+.select-box .el-select .el-input .el-select__caret{
+  color:#19ECFF
+}
+/*卡片样式*/
+
+.card-box .top-left-font{
+  // margin-right:20px!important;
+}
+.card-box .card-big-num{
+  font-size:18px!important;
+}
+.unit{
+  font-size:14px;
+}
+.card-box{
+  cursor: pointer;
+}
+.leftData{
+height: 280px;
+width: 607px;
+position: absolute;
+top:48px;
+left: 0;
+color: #fff;
+background: rgb(2 0 77);
+z-index: 11;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*修改*/
+.table{
+  width:100%;
+}
+/*修改样式*/
+.el-table{
+ th.el-table__cell.gutter:last-of-type{
+  border-bottom: 1px solid rgb(7 6 64);
+}
+}
